@@ -1,0 +1,276 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 130%;
+	margin: 0;
+	padding: 0;
+	background-color: #4D5474;
+	color: #FFFFFF;
+	min-width: 1440px;
+}
+
+ul,
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+$blue: #43E8FF;
+
+
+
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 241px;
+	//width: 17%;
+	height: 995px;
+	background-color: #1F2339;
+	text-align: left;
+	font-size: 14px;
+	line-height: 19px;
+	font-weight: 400;
+	//padding-left: 47px;
+
+
+
+	&-home_btn {
+		display: block;
+		color: #FFFFFF;
+		font-weight: 600;
+		margin-top: 31px;
+		margin-left: 19px;
+		padding-left: 27px;
+		position: relative;
+
+		
+
+		&:hover, &:active{
+			color: $blue;
+		}
+			
+	
+	}
+
+	.home-active{
+		color: $blue;
+
+	}
+
+
+
+	&-user {
+		display: block;
+		color: #FFFFFF;
+		margin-top: 25px;
+		margin-left: 19px;
+		padding-left: 27px;
+		position: relative;
+
+	&:active,&:hover{
+		color: $blue;
+	}
+	}
+
+	.menu {
+		margin: 79px 10px 0;
+		height: 335px;
+		//	margin-top: 89px;
+
+
+
+		&-list {
+			height: 335px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			//border: 2px solid red;
+		}
+
+
+		&-link {
+			display: block;
+			color: #FFFFFF;
+			padding-left: 32px;
+			position: relative;
+			padding: 13px 9px 14px 38px;
+			border-radius: 10px;
+			//transition: .4s all ease-out;
+
+
+			&:hover,
+			&:active {
+				background: radial-gradient(133.33% 2508.35% at -4.59% -10%, #32E6FF 0%, rgba(0, 255, 209, 0.81) 100%)
+					/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+					, #43E8FF;
+
+				color: #23273A;
+				font-weight: 500;
+				padding: 13px 9px 14px 38px;
+
+			}
+		}
+
+		&-active {
+
+			background: radial-gradient(133.33% 2508.35% at -4.59% -10%, #32E6FF 0%, rgba(0, 255, 209, 0.81) 100%)
+				/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+				, #43E8FF;
+			color: #23273A;
+
+			padding: 13px 9px 14px 38px;
+		}			
+	}
+
+	.clock{
+		margin: 370px 20px;
+		width: 83px;
+		height: 35px;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 27px;
+	}
+
+}
+
+.main {
+	width: 1200px;
+	margin-left: 241px;
+	//width: 83%;
+
+	.top {
+		position: absolute;
+		top: 57px;
+		left: 281px;
+		display: flex;
+		justify-content: space-between;
+		width: 1080px;
+		height: 83px;
+
+		&-user {
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 27px;
+			color: #FFFFFF;
+
+
+		}
+
+		
+		&-btns {
+			display: flex;
+			justify-content: space-between;
+			width: 83px;
+		}
+
+		&-more_btn {
+			display: block;
+			//	position: relative;
+			width: 35px;
+			height: 35px;
+			background-image: url(../img/more.png);
+			background-repeat: no-repeat;
+
+
+		}
+
+		&-options_btn {
+			display: block;
+			width: 34px;
+			height: 34px;
+			background-image: url(../img/options.svg);
+			margin-top: -3px;
+		}
+	}
+
+	.vidgets {
+		margin-top: 136px;
+		margin-left: 40px;
+		margin-bottom: 38px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 1080px;
+		height: 820px;
+		//border: 2px solid red;
+	/*	grid-template-columns: 2);
+		grid-template-rows: repeat(3, 1fr);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;*/
+		
+
+
+		&-card {
+			display: block;
+			background-color: #383E57;
+			color: #FFFFFF;
+			border-radius: 18px;
+			box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.15);
+
+
+		}
+
+		&-title {
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 26px;
+		}
+
+		.field_work {
+			width: 340px;
+			height: 230px;
+			//position: absolute;
+			//left: 281px;
+		//	top: 136px;
+			background-image: url(../img/field.png);
+			background-repeat: no-repeat;
+		}
+
+		.harvest_stat {
+			width: 340px;
+			height: 230px;
+			background-image: url(../img/map.png);
+			background-repeat: no-repeat;
+		}
+
+		.weather {
+			width: 340px;
+			height: 230px;
+		}
+
+		.reports {
+			width: 710px;
+			height: 230px;
+		}
+
+		.stuff {
+			width: 340px;
+			height: 230px;
+		}
+
+		.millet_stat {
+			width: 525px;
+			height: 270px;
+		}
+
+		.rented_equip {
+			width: 525px;
+			height: 270px;
+		}
+	}
+}

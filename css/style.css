@@ -1,0 +1,251 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 130%;
+  margin: 0;
+  padding: 0;
+  background-color: #4D5474;
+  color: #FFFFFF;
+  min-width: 1440px;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 241px;
+  height: 995px;
+  background-color: #1F2339;
+  text-align: left;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+}
+
+.header-home_btn {
+  display: block;
+  color: #FFFFFF;
+  font-weight: 600;
+  margin-top: 31px;
+  margin-left: 19px;
+  padding-left: 27px;
+  position: relative;
+}
+
+.header-home_btn:hover, .header-home_btn:active {
+  color: #43E8FF;
+}
+
+.header .home-active {
+  color: #43E8FF;
+}
+
+.header-user {
+  display: block;
+  color: #FFFFFF;
+  margin-top: 25px;
+  margin-left: 19px;
+  padding-left: 27px;
+  position: relative;
+}
+
+.header-user:active, .header-user:hover {
+  color: #43E8FF;
+}
+
+.header .menu {
+  margin: 79px 10px 0;
+  height: 335px;
+}
+
+.header .menu-list {
+  height: 335px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .menu-link {
+  display: block;
+  color: #FFFFFF;
+  padding-left: 32px;
+  position: relative;
+  padding: 13px 9px 14px 38px;
+  border-radius: 10px;
+}
+
+.header .menu-link:hover, .header .menu-link:active {
+  background: radial-gradient(133.33% 2508.35% at -4.59% -10%, #32E6FF 0%, rgba(0, 255, 209, 0.81) 100%), #43E8FF;
+  color: #23273A;
+  font-weight: 500;
+  padding: 13px 9px 14px 38px;
+}
+
+.header .menu-active {
+  background: radial-gradient(133.33% 2508.35% at -4.59% -10%, #32E6FF 0%, rgba(0, 255, 209, 0.81) 100%), #43E8FF;
+  color: #23273A;
+  padding: 13px 9px 14px 38px;
+}
+
+.header .clock {
+  margin: 370px 20px;
+  width: 83px;
+  height: 35px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.main {
+  width: 1200px;
+  margin-left: 241px;
+}
+
+.main .top {
+  position: absolute;
+  top: 57px;
+  left: 281px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1080px;
+  height: 83px;
+}
+
+.main .top-user {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
+.main .top-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 83px;
+}
+
+.main .top-more_btn {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-image: url(../img/more.png);
+  background-repeat: no-repeat;
+}
+
+.main .top-options_btn {
+  display: block;
+  width: 34px;
+  height: 34px;
+  background-image: url(../img/options.svg);
+  margin-top: -3px;
+}
+
+.main .vidgets {
+  margin-top: 136px;
+  margin-left: 40px;
+  margin-bottom: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1080px;
+  height: 820px;
+  /*	grid-template-columns: 2);
+		grid-template-rows: repeat(3, 1fr);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;*/
+}
+
+.main .vidgets-card {
+  display: block;
+  background-color: #383E57;
+  color: #FFFFFF;
+  border-radius: 18px;
+  -webkit-box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.15);
+}
+
+.main .vidgets-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.main .vidgets .field_work {
+  width: 340px;
+  height: 230px;
+  background-image: url(../img/field.png);
+  background-repeat: no-repeat;
+}
+
+.main .vidgets .harvest_stat {
+  width: 340px;
+  height: 230px;
+  background-image: url(../img/map.png);
+  background-repeat: no-repeat;
+}
+
+.main .vidgets .weather {
+  width: 340px;
+  height: 230px;
+}
+
+.main .vidgets .reports {
+  width: 710px;
+  height: 230px;
+}
+
+.main .vidgets .stuff {
+  width: 340px;
+  height: 230px;
+}
+
+.main .vidgets .millet_stat {
+  width: 525px;
+  height: 270px;
+}
+
+.main .vidgets .rented_equip {
+  width: 525px;
+  height: 270px;
+}
+/*# sourceMappingURL=style.css.map */

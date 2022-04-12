@@ -1,0 +1,101 @@
+@font-face {
+  font-family: 'icons';
+  src:  url('../iconsfont/icons.eot?3x7aou');
+  src:  url('../iconsfont/icons.eot?3x7aou#iefix') format('embedded-opentype'),
+    url('../iconsfont/icons.ttf?3x7aou') format('truetype'),
+    url('../iconsfont/icons.woff?3x7aou') format('woff'),
+    url('../iconsfont/icons.svg?3x7aou#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  position: absolute;
+  top: 10px;
+  left: 7px;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+
+
+
+.icon-events::before {
+  content: "\e900";
+  font-size: 24px;
+}
+
+.icon-fertilizer:before {
+  content: "\e901";
+ font-size: 24px;
+}
+
+.icon-home:before {
+  content: "\e902";
+  font-size: 18px;
+  top: 0;
+  left: 0;
+}
+
+.icon-notes:before {
+  content: "\e903";
+  font-size: 24px;
+}
+
+.icon-organizations:before {
+  content: "\e904";
+  font-size: 24px;
+}
+
+.icon-staff:before {
+  content: "\e905";
+  font-size: 24px;
+  position: absolute;
+  top: 10px;
+  left: 7px;
+}
+
+.icon-stat:before {
+  content: "\e906";
+  font-size: 24px;
+}
+
+.icon-user:before {
+  content: "\e907";
+  font-size: 18px;
+  top: 10px;
+  left: 0;
+}
+
+.icon-weather:before {
+  content: "\e908";
+  font-size: 20px;
+}
