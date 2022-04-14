@@ -1,14 +1,10 @@
-window.onload = function(){
-    window.setInterval(function(){
-     const date = new Date();
-     let hours = date.getHours();
-     let min = date.getMinutes();
-     let sec = date.getSeconds();
-
-     let myClock = hours + ":" + min +":"+ sec;
-     document.querySelector(".clock").textContent = myClock;
-    
-
+window.onload = function () {
+    window.setInterval(function () {
+        const date = new Date();
+        let time = new Date().toLocaleTimeString("ru-RU", {
+          hour12: false,          
+        });
+     
+        document.querySelector(".clock").textContent = time;
     });
-
 }

@@ -63,7 +63,7 @@ a {
 .header-user {
   display: block;
   color: #FFFFFF;
-  margin-top: 25px;
+  margin-top: 28px;
   margin-left: 19px;
   padding-left: 27px;
   position: relative;
@@ -74,7 +74,7 @@ a {
 }
 
 .header .menu {
-  margin: 79px 10px 0;
+  margin: 76px 10px 0;
   height: 335px;
 }
 
@@ -142,11 +142,62 @@ a {
   height: 83px;
 }
 
-.main .top-user {
+.main .top-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 27px;
-  color: #FFFFFF;
+  margin: 0;
+}
+
+.main .top .search {
+  position: relative;
+  margin-left: 200px;
+  margin-top: -5px;
+  width: 603px;
+  height: 36px;
+}
+
+.main .top .search-field {
+  width: 465px;
+  height: 36px;
+  background: #3E4459;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 8px 130px 9px 16px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: #C4C4C4;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main .top .search-btn {
+  background: #FFFFFF;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #23273A;
+  padding: 7px 30px;
+  border: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.main .top .search-filter {
+  width: 13px;
+  height: 16px;
+  display: block;
+  background-image: url(../img/Filter.svg);
+  position: absolute;
+  top: 10px;
+  right: 148px;
+  cursor: pointer;
 }
 
 .main .top-btns {
@@ -173,6 +224,28 @@ a {
   height: 34px;
   background-image: url(../img/options.svg);
   margin-top: -3px;
+}
+
+.main .top-status {
+  color: #43E8FF;
+  display: block;
+  margin-top: 7px;
+  margin-left: -2px;
+}
+
+.main .top-check_btn {
+  display: block;
+  padding: 7px 30px;
+  width: 238px;
+  height: 36px;
+  background: #FFFFFF;
+  color: #23273A;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  margin-left: 360px;
+  margin-top: -2px;
 }
 
 .main .vidgets {
@@ -208,6 +281,9 @@ a {
   font-weight: 700;
   font-size: 16px;
   line-height: 26px;
+  display: block;
+  margin-top: 22px;
+  margin-left: 20px;
 }
 
 .main .vidgets .field_work {
@@ -215,6 +291,7 @@ a {
   height: 230px;
   background-image: url(../img/field.png);
   background-repeat: no-repeat;
+  background-position: 83% 58%;
 }
 
 .main .vidgets .harvest_stat {
@@ -222,6 +299,7 @@ a {
   height: 230px;
   background-image: url(../img/map.png);
   background-repeat: no-repeat;
+  background-position: 65% 65%;
 }
 
 .main .vidgets .weather {
@@ -232,6 +310,9 @@ a {
 .main .vidgets .reports {
   width: 710px;
   height: 230px;
+  background-image: url(../img/chart.png);
+  background-repeat: no-repeat;
+  background-position: 91.5% 46%;
 }
 
 .main .vidgets .stuff {
@@ -242,10 +323,86 @@ a {
 .main .vidgets .millet_stat {
   width: 525px;
   height: 270px;
+  background-image: url(../img/pie-chart.png);
+  background-repeat: no-repeat;
+  background-position: 77% 72%;
 }
 
 .main .vidgets .rented_equip {
   width: 525px;
   height: 270px;
+  background-image: url(../img/tech-chart.png);
+  background-repeat: no-repeat;
+  background-position: 96% 72%;
+}
+
+.main .table {
+  position: relative;
+  margin-top: 147px;
+  margin-left: 40px;
+  border-radius: 18px;
+  width: 1080px;
+  height: 360px;
+  background-color: #383E57;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.main .table-field {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.main .table thead {
+  display: table;
+  width: calc(100% - 16px);
+}
+
+.main .table tbody {
+  display: block;
+  width: 1040px;
+  height: 300px;
+  overflow-y: scroll;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  scrollbar-color: #3E4459 #23273A;
+}
+
+.main .table tbody::-webkit-scrollbar {
+  background-color: #3E4459;
+  border-radius: 6px;
+  width: 15px;
+}
+
+.main .table tbody::-webkit-scrollbar-thumb {
+  background-color: #23273A;
+  border-radius: 6px;
+  width: 11px;
+  height: 246px;
+}
+
+.main .table th {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 10px;
+}
+
+.main .table td {
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #A1A6BE;
+  padding: 15px 20px;
+}
+
+.main .table td:last-child {
+  border-right: 0;
+}
+
+.main .table td:first-child {
+  border-left: 0;
 }
 /*# sourceMappingURL=style.css.map */
