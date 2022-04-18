@@ -342,11 +342,13 @@ a {
   margin-left: 40px;
   border-radius: 18px;
   width: 1080px;
-  height: 360px;
+  height: 789px;
   background-color: #383E57;
   text-align: center;
   padding-left: 10px;
-  padding-right: 20px;
+  padding-right: 10px;
+  -webkit-box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.15);
 }
 
 .main .table-field {
@@ -357,29 +359,26 @@ a {
 .main .table thead {
   display: table;
   width: calc(100% - 16px);
+  height: 50px;
 }
 
 .main .table tbody {
   display: block;
-  width: 1040px;
-  height: 300px;
-  overflow-y: scroll;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-  scrollbar-color: #3E4459 #23273A;
-}
+  width: 1070px;
+  height: 720px;
+  /*	&::-webkit-scrollbar {
+				background-color: #3E4459;
+				border-radius: 6px;
+				width: 12px;
+				height: 46px;
+			}
 
-.main .table tbody::-webkit-scrollbar {
-  background-color: #3E4459;
-  border-radius: 6px;
-  width: 15px;
-}
-
-.main .table tbody::-webkit-scrollbar-thumb {
-  background-color: #23273A;
-  border-radius: 6px;
-  width: 11px;
-  height: 246px;
+			&::-webkit-scrollbar-thumb {
+				background-color: #23273A;
+				border-radius: 6px;
+				width: 8px;
+				height: 146px;
+			}*/
 }
 
 .main .table th {
@@ -404,5 +403,43 @@ a {
 
 .main .table td:first-child {
   border-left: 0;
+}
+
+.main .table .simplebar-vertical {
+  background-color: #3E4459;
+  border-radius: 6px;
+  width: 15px;
+  height: 100%;
+  margin-right: 8px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.main .table .simplebar-scrollbar {
+  border-radius: 6px;
+  width: 11px;
+  background-color: #23273A;
+  margin: 0 auto;
+}
+
+.main .table .simplebar-scrollbar::before {
+  border-radius: 6px;
+  width: 11px;
+  background-color: #23273A;
+  left: 0;
+}
+
+.main .table .simplebar-content-wrapper {
+  padding-right: 10px;
+}
+
+.main .table-edit_btn {
+  font-size: 0;
+  width: 15px;
+  height: 14px;
+  background-image: url(../img/edit_btn.svg);
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

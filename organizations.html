@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/icons-font.css">
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
@@ -85,119 +86,532 @@
         </div>
         <div class="main-table table">
             <div class="scroll-wrap">
-            <table class="table-field">
-                <thead>
-                    <tr class="table-header">
-                        <th scope="col">Наименование организации</th>
-                        <th scope="col">ИНН</th>
-                        <th scope="col">Руководитель</th>
-                        <th scope="col" colspan="2">Адрес</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Фонд "Сколково" </td>
-                        <td>7706412961</td>
-                        <td>Балега Юрий Юрьевич</td>
-                        <td>обл. Московская, г. Одинцово, д. Сколково, ул. Новая, 100</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>АНО "Издательство РАМН"</td>
-                        <td>7709202761</td>
-                        <td>Султыгов Марат Магомедович</td>
-                        <td>г. Москва, Переулок Яковоапостольский, д. 11-13, стр. 1, пом. 1</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Российское историческое об...</td>
-                        <td>7704280029</td>
-                        <td>Иванов  Петр Иванович</td>
-                        <td>г. Москва, ул. Воронцово поле, д. 13, стр 1</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Академический учебно-науч...</td>
-                        <td>7704274804</td>
-                        <td>Иванов  Иван Николаевич</td>
-                        <td>г. Москва, переулок Борисоглебский, д. 13, 3</td>
-                        <td></td>
-                    </tr>
-                  <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                  </tr>
-                  <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                  </tr>
-                  <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                  </tr>
-                  <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                  </tr>
-                  <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                  </tr>
-                  <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                  </tr>
-                  <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                  </tr>
-                  <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                  </tr>
-                  <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                  </tr>
-                  <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                  </tr>
-                </tbody>
-                
-            </table>
-        </div>
+                <table class="table-field">
+                    <thead>
+                        <tr class="table-header">
+                            <th scope="col">Наименование организации</th>
+                            <th scope="col">ИНН</th>
+                            <th scope="col">Руководитель</th>
+                            <th scope="col" colspan="2">Адрес</th>
+                        </tr>
+                    </thead>
+                    <tbody data-simplebar>
+                        <tr>
+                            <td class="table-org_name orange">Фонд "Сколково" </td>
+                            <td class="table-INN">7706412961</td>
+                            <td class="table-director">Балега Юрий Юрьевич</td>
+                            <td>обл. Московская, г. Одинцово, д. Сколково, ул. Новая, 100</td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name orange">АНО "Издательство РАМН"</td>
+                            <td class="table-INN">7709202761</td>
+                            <td class="table-director">Султыгов Марат Магомедович</td>
+                            <td>г. Москва, Переулок Яковоапостольский, д. 11-13, стр. 1, пом. 1</td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name orange">Российское историческое об...</td>
+                            <td class="table-INN">7704280029</td>
+                            <td class="table-director">Иванов Петр Иванович</td>
+                            <td>г. Москва, ул. Воронцово поле, д. 13, стр 1</td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name orange">Академический учебно-науч...</td>
+                            <td class="table-INN">7704274804</td>
+                            <td class="table-director">Иванов Иван Николаевич</td>
+                            <td>г. Москва, переулок Борисоглебский, д. 13, 3</td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name orange">ЦИПБ РАН </td>
+                            <td class="table-INN">7728514244</td>
+                            <td class="table-director">Петров Иван Федорович</td>
+                            <td>г. Москва, ул. Гарибальди, д. 21Б</td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name blue">ООО “Прибор -ресурс”</td>
+                            <td class="table-INN">7743226441</td>
+                            <td class="table-director">Кудряшов Борис Андреевич</td>
+                            <td>г. Москва, просп. Ленинградский, д. 77, кор. 1, под пом VIII К 7</td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name blue">ООО “Прибор -ресурс”</td>
+                            <td class="table-INN">7743226441</td>
+                            <td class="table-director">Сергеев Александр Михайлоич</td>
+                            <td>г. Москва, просп. Ленинградский, д. 77, кор. 1, под пом VIII К 7</td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name blue">ООО “Прибор -ресурс”</td>
+                            <td class="table-INN">7743226441</td>
+                            <td class="table-director">Балега Юрий Юрьевич</td>
+                            <td>
+                                г. Москва, просп. Ленинградский, д. 77, кор. 1, под пом VIII К 7
+                            </td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name blue">Фонд "Сколково"</td>
+                            <td class="table-INN">7706412961</td>
+                            <td class="table-director">Султыгов Марат Магомедович</td>
+                            <td>
+                                обл. Московская, г. Одинцово, д. Сколково, ул. Новая, 100
+                            </td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name blue">АНО "Издательство РАМН" </td>
+                            <td class="table-INN">7709202761</td>
+                            <td class="table-director">Иванов Петр Иванович</td>
+                            <td>
+                                г. Москва, Переулок Яковоапостольский, д. 11-13, стр. 1, пом. 1
+                            </td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name green">Российское историческое об...</td>
+                            <td class="table-INN">7704280029</td>
+                            <td class="table-director">Иванов Иван Николаевич</td>
+                            <td>
+                                г. Москва, ул. Воронцово поле, д. 13, стр 1
+                            </td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name green">Академический учебно-науч...</td>
+                            <td class="table-INN">7704274804</td>
+                            <td class="table-director">Балега Юрий Юрьевич</td>
+                            <td>
+                                г. Москва, переулок Борисоглебский, д. 13, 3
+                            </td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name green">ЦИПБ РАН</td>
+                            <td class="table-INN">7728514244</td>
+                            <td class="table-director">Султыгов Марат Магомедович</td>
+                            <td>
+                                г. Москва, ул. Гарибальди, д. 21Б
+                            </td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name green">ООО “Прибор -ресурс”</td>
+                            <td class="table-INN">7743226441</td>
+                            <td class="table-director">Султыгов Марат Магомедович</td>
+                            <td>г. Москва, просп. Ленинградский, д. 77, кор. 1, под пом VIII К 7</td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name blue">ООО “Прибор -ресурс”</td>
+                            <td class="table-INN">7743226441</td>
+                            <td class="table-director">Кудряшов Борис Андреевич</td>
+                            <td>г. Москва, просп. Ленинградский, д. 77, кор. 1, под пом VIII К 7</td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name blue">ООО “Прибор -ресурс”</td>
+                            <td class="table-INN">7743226441</td>
+                            <td class="table-director">Сергеев Александр Михайлоич</td>
+                            <td>г. Москва, просп. Ленинградский, д. 77, кор. 1, под пом VIII К 7</td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name blue">ООО “Прибор -ресурс”</td>
+                            <td class="table-INN">7743226441</td>
+                            <td class="table-director">Балега Юрий Юрьевич</td>
+                            <td>
+                                г. Москва, просп. Ленинградский, д. 77, кор. 1, под пом VIII К 7
+                            </td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name blue">Фонд "Сколково"</td>
+                            <td class="table-INN">7706412961</td>
+                            <td class="table-director">Султыгов Марат Магомедович</td>
+                            <td>
+                                обл. Московская, г. Одинцово, д. Сколково, ул. Новая, 100
+                            </td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name blue">АНО "Издательство РАМН" </td>
+                            <td class="table-INN">7709202761</td>
+                            <td class="table-director">Иванов Петр Иванович</td>
+                            <td>
+                                г. Москва, Переулок Яковоапостольский, д. 11-13, стр. 1, пом. 1
+                            </td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name green">Российское историческое об...</td>
+                            <td class="table-INN">7704280029</td>
+                            <td class="table-director">Иванов Иван Николаевич</td>
+                            <td>
+                                г. Москва, ул. Воронцово поле, д. 13, стр 1
+                            </td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name green">Академический учебно-науч...</td>
+                            <td class="table-INN">7704274804</td>
+                            <td class="table-director">Балега Юрий Юрьевич</td>
+                            <td>
+                                г. Москва, переулок Борисоглебский, д. 13, 3
+                            </td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name green">ЦИПБ РАН</td>
+                            <td class="table-INN">7728514244</td>
+                            <td class="table-director">Султыгов Марат Магомедович</td>
+                            <td>
+                                г. Москва, ул. Гарибальди, д. 21Б
+                            </td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name green">ООО “Прибор -ресурс”</td>
+                            <td class="table-INN">7743226441</td>
+                            <td class="table-director">Султыгов Марат Магомедович</td>
+                            <td>г. Москва, просп. Ленинградский, д. 77, кор. 1, под пом VIII К 7</td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name blue">ООО “Прибор -ресурс”</td>
+                            <td class="table-INN">7743226441</td>
+                            <td class="table-director">Кудряшов Борис Андреевич</td>
+                            <td>г. Москва, просп. Ленинградский, д. 77, кор. 1, под пом VIII К 7</td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name blue">ООО “Прибор -ресурс”</td>
+                            <td class="table-INN">7743226441</td>
+                            <td class="table-director">Сергеев Александр Михайлоич</td>
+                            <td>г. Москва, просп. Ленинградский, д. 77, кор. 1, под пом VIII К 7</td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name blue">ООО “Прибор -ресурс”</td>
+                            <td class="table-INN">7743226441</td>
+                            <td class="table-director">Балега Юрий Юрьевич</td>
+                            <td>
+                                г. Москва, просп. Ленинградский, д. 77, кор. 1, под пом VIII К 7
+                            </td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name blue">Фонд "Сколково"</td>
+                            <td class="table-INN">7706412961</td>
+                            <td class="table-director">Султыгов Марат Магомедович</td>
+                            <td>
+                                обл. Московская, г. Одинцово, д. Сколково, ул. Новая, 100
+                            </td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name blue">АНО "Издательство РАМН" </td>
+                            <td class="table-INN">7709202761</td>
+                            <td class="table-director">Иванов Петр Иванович</td>
+                            <td>
+                                г. Москва, Переулок Яковоапостольский, д. 11-13, стр. 1, пом. 1
+                            </td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name green">Российское историческое об...</td>
+                            <td class="table-INN">7704280029</td>
+                            <td class="table-director">Иванов Иван Николаевич</td>
+                            <td>
+                                г. Москва, ул. Воронцово поле, д. 13, стр 1
+                            </td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name green">Академический учебно-науч...</td>
+                            <td class="table-INN">7704274804</td>
+                            <td class="table-director">Балега Юрий Юрьевич</td>
+                            <td>
+                                г. Москва, переулок Борисоглебский, д. 13, 3
+                            </td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name green">ЦИПБ РАН</td>
+                            <td class="table-INN">7728514244</td>
+                            <td class="table-director">Султыгов Марат Магомедович</td>
+                            <td>
+                                г. Москва, ул. Гарибальди, д. 21Б
+                            </td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name green">ООО “Прибор -ресурс”</td>
+                            <td class="table-INN">7743226441</td>
+                            <td class="table-director">Султыгов Марат Магомедович</td>
+                            <td>г. Москва, просп. Ленинградский, д. 77, кор. 1, под пом VIII К 7</td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name blue">ООО “Прибор -ресурс”</td>
+                            <td class="table-INN">7743226441</td>
+                            <td class="table-director">Кудряшов Борис Андреевич</td>
+                            <td>г. Москва, просп. Ленинградский, д. 77, кор. 1, под пом VIII К 7</td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name blue">ООО “Прибор -ресурс”</td>
+                            <td class="table-INN">7743226441</td>
+                            <td class="table-director">Сергеев Александр Михайлоич</td>
+                            <td>г. Москва, просп. Ленинградский, д. 77, кор. 1, под пом VIII К 7</td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name blue">ООО “Прибор -ресурс”</td>
+                            <td class="table-INN">7743226441</td>
+                            <td class="table-director">Балега Юрий Юрьевич</td>
+                            <td>
+                                г. Москва, просп. Ленинградский, д. 77, кор. 1, под пом VIII К 7
+                            </td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name blue">Фонд "Сколково"</td>
+                            <td class="table-INN">7706412961</td>
+                            <td class="table-director">Султыгов Марат Магомедович</td>
+                            <td>
+                                обл. Московская, г. Одинцово, д. Сколково, ул. Новая, 100
+                            </td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name blue">АНО "Издательство РАМН" </td>
+                            <td class="table-INN">7709202761</td>
+                            <td class="table-director">Иванов Петр Иванович</td>
+                            <td>
+                                г. Москва, Переулок Яковоапостольский, д. 11-13, стр. 1, пом. 1
+                            </td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name green">Российское историческое об...</td>
+                            <td class="table-INN">7704280029</td>
+                            <td class="table-director">Иванов Иван Николаевич</td>
+                            <td>
+                                г. Москва, ул. Воронцово поле, д. 13, стр 1
+                            </td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name green">Академический учебно-науч...</td>
+                            <td class="table-INN">7704274804</td>
+                            <td class="table-director">Балега Юрий Юрьевич</td>
+                            <td>
+                                г. Москва, переулок Борисоглебский, д. 13, 3
+                            </td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name green">ЦИПБ РАН</td>
+                            <td class="table-INN">7728514244</td>
+                            <td class="table-director">Султыгов Марат Магомедович</td>
+                            <td>
+                                г. Москва, ул. Гарибальди, д. 21Б
+                            </td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name green">ООО “Прибор -ресурс”</td>
+                            <td class="table-INN">7743226441</td>
+                            <td class="table-director">Султыгов Марат Магомедович</td>
+                            <td>г. Москва, просп. Ленинградский, д. 77, кор. 1, под пом VIII К 7</td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-org_name orange">Фонд "Сколково" </td>
+                            <td class="table-INN">7706412961</td>
+                            <td class="table-director">Балега Юрий Юрьевич</td>
+                            <td>обл. Московская, г. Одинцово, д. Сколково, ул. Новая, 100</td>
+                            <td>
+                                <form name="edit_btn" action="#">
+                                    <input id="edit" type="submit" name="edit" value="Edit" class="table-edit_btn">
+                                </form>
+                            </td>
+                        </tr>
+                       
+                    </tbody>
+                </table>
+            </div>
         </div>
     </main>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
     <script src="main.js"></script>
 </body>

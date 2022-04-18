@@ -378,57 +378,50 @@ $blue: #43E8FF;
 		margin-left: 40px;
 		border-radius: 18px;
 		width: 1080px;
-		height: 360px;
+		height: 789px;
 		background-color: #383E57;
-
 		text-align: center;
 		padding-left: 10px;
-		padding-right: 20px;
-
-
-
-		.scroll-wrap {
-			
-			
-		}
+		padding-right: 10px;
+		box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.15);
 
 		&-field {
-
 			border-collapse: collapse;
-
 			border-spacing: 0;
 
-
 		}
 
-		thead{
-display: table;
-width: calc(100% - 16px);
+		thead {
+			display: table;
+			width: calc(100% - 16px);
+			height: 50px;
 		}
 
-		tbody{
+		tbody {
 			display: block;
-			width: 1040px;
-			height: 300px;
-			
-			overflow-y: scroll;
-			scroll-snap-type: y mandatory;
-			scrollbar-color: #3E4459 #23273A;
+			width: 1070px;
+			height: 720px;
+		
+			//overflow: auto;
+			//overflow-y: scroll;
+			//scroll-snap-type: y mandatory;
+		//	scrollbar-color: #3E4459 #23273A;
+			//	scroll-margin: 0 10px 0 50px;
 
-
-			&::-webkit-scrollbar {
+		/*	&::-webkit-scrollbar {
 				background-color: #3E4459;
 				border-radius: 6px;
-				width: 15px;
-				
+				width: 12px;
+				height: 46px;
 			}
 
 			&::-webkit-scrollbar-thumb {
 				background-color: #23273A;
 				border-radius: 6px;
-				width: 11px;
-				height: 246px;
-			}
+				width: 8px;
+				height: 146px;
+			}*/
+
 		}
 
 		th {
@@ -436,7 +429,7 @@ width: calc(100% - 16px);
 			font-size: 14px;
 			line-height: 19px;
 			//border: 0.5px solid rgba(0, 0, 0, 0.5);
-		//	border-width: 0 0 1px 0;
+			//	border-width: 0 0 1px 0;
 			padding: 10px;
 		}
 
@@ -459,6 +452,46 @@ width: calc(100% - 16px);
 			&:first-child {
 				border-left: 0;
 			}
+		}
+
+		//	.simplebar-track {
+		.simplebar-vertical {
+			background-color: #3E4459;
+			border-radius: 6px;
+			width: 15px;
+			height: 100%;
+			margin-right: 8px;
+			margin-left: 5px;
+			margin-top: 5px;
+		}
+
+		.simplebar-scrollbar {
+			border-radius: 6px;
+			width: 11px;
+			background-color: #23273A;
+			margin: 0 auto;
+
+			&::before {
+				border-radius: 6px;
+				width: 11px;
+				background-color: #23273A;
+				left: 0;
+			}
+		}
+
+		.simplebar-content-wrapper {
+			//padding-left: 40px;
+			padding-right: 10px;
+		}
+
+		&-edit_btn {
+			font-size: 0;
+			width: 15px;
+			height: 14px;
+			background-image: url(../img/edit_btn.svg);
+			background-color: transparent;
+			border: 0;
+			cursor: pointer;
 		}
 	}
 }
