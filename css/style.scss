@@ -368,7 +368,243 @@ $blue: #43E8FF;
 
 	//Мероприятия//
 
-	&-event {}
+	.content {
+		.company {
+			width: 525px;
+			height: 750px;
+			//width: 30%;
+			//height: auto;
+			background-color: #383E57;
+			border-radius: 18px;
+			box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.15);
+			margin-top: 136px;
+			margin-left: 40px;
+			text-align: left;
+			position: relative;
+			//	border: 2px solid red;
+
+			span {
+				display: block;
+			}
+
+
+			.hr {
+				position: absolute;
+				left: 0px;
+				width: 525px;
+				height: 1px;
+				background-color: #151E41;
+				border: none;
+
+				&-1 {
+					top: 72px;
+				}
+
+				&-2 {
+					top: 296px;
+				}
+
+				&-3 {
+					top: 632px;
+				}
+			}
+
+			&-title {
+				display: block;
+				position: absolute;
+				top: 27px;
+				font-weight: 700;
+				font-size: 14px;
+				line-height: 19px;
+				padding-left: 20px;
+
+
+			}
+
+			&-block-1 {
+				position: absolute;
+				top: 98px;
+				padding-left: 20px;
+			}
+
+			&-block-2 {
+				position: absolute;
+				top: 322px;
+				padding-left: 20px;
+			}
+
+			&-block-3 {
+				position: absolute;
+				top: 558px;
+				padding-left: 20px;
+			}
+
+
+			//	.company-wrapper { }
+			&-subtitle {
+				font-weight: 700;
+				font-size: 14px;
+				line-height: 19px;
+
+
+			}
+
+			&-status {
+				font-weight: 300;
+				font-size: 12px;
+				line-height: 16px;
+				color: #FF8991;
+			}
+
+
+
+			&-director {
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 19px;
+
+			}
+
+			&-contract {
+				font-weight: 400;
+				font-size: 12px;
+				line-height: 16px;
+			}
+
+			&-address {}
+
+			//	.company-stuff { }
+			//	.company-old_names { }
+			//	.old_name { }
+
+			&-old_names {
+				max-height: 0;
+				overflow: hidden;
+				transition: .2s ease;
+				//transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+			}
+
+			.document-btn {
+				display: block;
+				width: 24px;
+				height: 24px;
+				background-image: url(../img/document-icon.svg);
+				position: absolute;
+				top: 60px;
+				right: 20px;
+				transition: .3s ease;
+				opacity: 0;
+			}
+
+			.document-btn_active {
+				opacity: 1;
+			}
+
+			&-block-1,
+			&-block-2,
+			&-block-3 {
+				background-color: #383E57;
+				max-height: 335px;
+				border-top: 1px solid #151E41;
+				//position: relative;
+
+				.more-arrow_btn {
+					position: absolute;
+					top: 32px;
+					right: 20px;
+					display: block;
+					width: 13px;
+					height: 8px;
+					background-image: url(../img/more-arrow_down.svg);
+					background-repeat: no-repeat;
+				}
+
+				.btn_active {
+					display: block;
+					width: 13px;
+					height: 8px;
+					background-image: url(../img/more-arrow_up.svg);
+					background-repeat: no-repeat;
+				}
+			}
+
+
+		}
+
+		.docs {
+			position: absolute;
+			top: 136px;
+			left: 830px;
+			width: 526px;
+			height: 166px;
+			border-radius: 18px;
+			background-color: #383E57;
+			padding:19px 22px 19px 27px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			&-title {
+				display: flex;
+				position: relative;
+				display: block;
+				padding-top: 10px;
+				font-weight: 700;
+				font-size: 14px;
+				line-height: 19px;
+				
+				
+
+				&::after {
+					content: '';
+					//position: absolute;
+				//top: 0;
+				//	left: 0;
+				//	width: 110%;
+					
+				//	margin-top: .6em;
+				//	margin-left: 110%;
+				
+				//	order: 2; /* Выводим вторым */
+					//margin: 0 5px; 
+				}
+			}
+
+			&-line{
+				//display: flex;
+				flex-grow: 1;
+				border-top: 1px solid #ffffff;
+				//margin-top: .6em;
+				margin: 23px 10px 11px; 
+			}
+
+			&-wrap{
+				display: flex;
+				justify-content: space-between;
+			//	align-items: baseline; 
+			}
+
+			&-btn{
+				/* Frame 216 */
+
+/* Auto layout */
+//display: flex;
+//flex-direction: row;
+//align-items: flex-start;
+padding: 7px 30px;
+background: #23273A;
+border-radius: 6px;
+//width: 123px;
+//height: 22px;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+color: #43E8FF;
+border: none;
+cursor: pointer;
+			}
+		}
+	}
 
 
 	//Организации//
@@ -401,14 +637,14 @@ $blue: #43E8FF;
 			display: block;
 			width: 1070px;
 			height: 720px;
-		
+
 			//overflow: auto;
 			//overflow-y: scroll;
 			//scroll-snap-type: y mandatory;
-		//	scrollbar-color: #3E4459 #23273A;
+			//	scrollbar-color: #3E4459 #23273A;
 			//	scroll-margin: 0 10px 0 50px;
 
-		/*	&::-webkit-scrollbar {
+			/*	&::-webkit-scrollbar {
 				background-color: #3E4459;
 				border-radius: 6px;
 				width: 12px;
